@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_5</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача4</h2>
+   <script>
+      //Вводимо дані
+      const rowsNumber = parseInt(prompt('Ввести три рядок таблиці='))
+      const columnsNumber = parseInt(prompt('Ввести сім стовпчиків таблиці='))
+
+      document.write(`<table border="3px">
+      <tbody>`)
+
+      for (let r = 0; r < 3; r++) {
+         document.write('<tr>')
+
+         for (let c = 1; c <= 7; c++) {
+
+            document.write(`<td>${c}</td > `)
+
+         }
+         document.write('</tr>')
+
+      }
+      document.write(`</tbody >
+         </table >` )
+
+
+   </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_5</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача13</h2>
+   <script>
+      const sizeSeaP = parseInt(prompt('Потрібно ввести розмір морського поля P', '3'))
+      const sizeSeaK = parseInt(prompt('Потрібно ввести розмір морського поля K', '3'))
+      const shoot = parseInt(prompt('Потрібно ввести кількість пострілів К'))
+      const positionSeaP = Math.floor(Math.random() * sizeSeaP + 1)
+      const positionSeaK = Math.floor(Math.random() * sizeSeaK + 1)
+      for (let c = 1; c <= shoot; c++) {
+         let userShootP = parseInt(prompt('Для пострілу введить координату P'))
+         let userShootK = parseInt(prompt('Для пострілу введить координату K'))
+         if (userShootP === positionSeaK && userShootK === positionSeaK) {
+            alert(`Ви потопили корабель.`)
+            break
+         } else if (shoot === c) {
+            alert('Ви використали всі снаряди. Знищити ворожий корбаль не вдалося.')
+            break
+         } else {
+            alert(`Ви не влучили по ворожому кораблю! Залишилось пострілів ${shoot - close}`)
+         }
+      }
+
+   </script>
+</body>
+
+
+</html>

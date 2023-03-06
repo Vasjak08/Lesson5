@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_5</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача10</h2>
+   <script>
+      const numberMin = parseInt(prompt('Введіть перше число'))
+      const numberMax = parseInt(prompt('Введіть кінцеве число'))
+      let summ = 0
+
+      if (numberMin > numberMax) {
+         let specifiedUser = numberMax;
+         numberMax = numberMin
+         numberMin = specifiedUser
+      }
+
+      for (let i = numberMin + 1; i < numberMax; i++) {
+         if (i % 2 !== 0) {
+            summ +=i
+         }
+      }
+      document.write(`Сумма=${summ}`)
+
+   </script>
+</body>
+
+
+</html>

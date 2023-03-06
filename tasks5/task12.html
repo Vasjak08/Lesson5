@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_5</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <h2>Задача12</h2>
+
+   <script>
+      const slotMachine = 4
+      let positionNumber = ''
+      let result
+      for (let img = 0; img < 3; img++) {
+         const randomImg = 1 + Math.floor(Math.random() * (4))
+         positionNumber += String(randomImg)
+
+         document.write(`<img src="./img/${randomImg}.jpg" width="150"/>`)
+
+      }
+      switch (positionNumber) {
+         case '111': result = 'Ви виграли 100 грн'
+
+            break;
+         case '222': result = 'Ви виграли 200 грн'
+
+            break;
+         case '323': result = 'Ви виграли 500 грн'
+
+            break;
+         case '444': result = 'Ви виграли 1000 грн'
+
+            break;
+         default: result = 'Ви не виграли'
+            break;
+      }
+      document.write(`<br>${result}`)
+
+   </script>
+</body>
+
+
+</html>

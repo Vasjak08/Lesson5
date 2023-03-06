@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_5</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+   <h2>Задача9</h2>
+   <script>
+      let counter = parseInt(prompt('Введіть число від 0-7'))
+      document.write(`Ваше число ${counter} <br>`)
+      const min = 0
+      const max = 7
+
+      for (let i = 0; i < Infinity; i++) {
+         let randomN = min + Math.floor(Math.random() * (min + max))
+         let confirmTest = confirm(` Ваше ваше  ${randomN}`)
+         if (confirmTest === true && randomN === counter) {
+            document.write(`Ви вгадали ваше число ${randomN}`)
+            break
+         }
+         if (confirmTest === false) {
+            document.write(`Вгадуйте ще..`)
+            break
+         }
+      }
+
+   </script>
+</body>
+
+
+</html>
